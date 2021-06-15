@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 import { CONTENT_FONT_SIZE, FONT_FAMILY, STATUS_FONT_SIZE } from "../constants";
 
 export const MessageContent = (props) => {
@@ -21,7 +21,7 @@ export const MessageContent = (props) => {
                 letterSpacing: 0,
                 alignSelf: 'flex-end'
 
-            }}>{" \t" + status}</Text>
+            }}>{Platform.OS === "android"?"     oiuoiuo":"\t" + status}</Text>
         </Text>
     </View>
 }
