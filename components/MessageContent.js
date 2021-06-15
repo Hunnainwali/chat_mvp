@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {CONTENT_FONT_SIZE, FONT_FAMILY} from "../constants";
+import { View, Text } from 'react-native';
+import { CONTENT_FONT_SIZE, FONT_FAMILY, STATUS_FONT_SIZE } from "../constants";
 
 export const MessageContent = (props) => {
-    const {text} = props;
+    const { text, status } = props;
     return <View>
         <Text
             style={{
@@ -13,6 +13,15 @@ export const MessageContent = (props) => {
             }}
         >
             {text}
+
+            <Text style={{
+                color: 'transparent',
+                fontSize: STATUS_FONT_SIZE,
+                fontFamily: FONT_FAMILY,
+                letterSpacing: 0,
+                alignSelf: 'flex-end'
+
+            }}>{" \t" + status}</Text>
         </Text>
     </View>
 }
