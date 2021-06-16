@@ -9,13 +9,12 @@ export const MessageStatus = (props) => {
         alignItems: 'flex-end',
         alignSelf: 'flex-end',
         justifyContent: 'flex-end',
-        height: CONTENT_FONT_SIZE,
+        // height: CONTENT_FONT_SIZE,
         // marginLeft: amountOfLines === 1 ? 10 : undefined,
         marginTop: -CONTENT_FONT_SIZE,
     }}>
-
-
-        <Text style={{
+        <Text 
+        style={{
             color: 'yellow',
             fontSize: STATUS_FONT_SIZE,
             fontFamily: FONT_FAMILY,

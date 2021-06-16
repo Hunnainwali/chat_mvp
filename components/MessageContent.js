@@ -14,14 +14,15 @@ export const MessageContent = (props) => {
         >
             {text}
 
-            <Text style={{
+            <Text 
+            style={{
                 color: 'transparent',
                 fontSize: STATUS_FONT_SIZE,
                 fontFamily: FONT_FAMILY,
                 letterSpacing: 0,
                 alignSelf: 'flex-end'
 
-            }}>{Platform.OS === "android"?"     oiuoiuo":"\t" + status}</Text>
+            }}>{Platform.OS === "android" ? "     " : "\t"}{status}</Text>
         </Text>
     </View>
 }

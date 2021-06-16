@@ -21,7 +21,7 @@ export const messages = [
     },
     {
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat quis libero sed elementum. Mauris suscipit pretium lorem, a bibendum nunc maximus fringilla.',
-        status: 'sent',
+        status: 'This message has been sent and but not delivered.',
         wasSentByMe: true,
     },
     {
